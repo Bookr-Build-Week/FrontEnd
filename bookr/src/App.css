@@ -58,10 +58,4 @@ button{
   font-weight: bolder;
 }
 
-.add-friend{
-  width:70%;
-  padding:2%;
-  margin:2% auto;
-  display:flex;
-  justify-content: space-around;
-}
+
