@@ -20,3 +20,48 @@
 .App-link {
   color: #09d3ac;
 }
+.nav{
+  background-color: orange;
+  padding:2%;
+  margin:2% 0;
+  display:flex;
+  justify-content: space-around;
+}
+
+.nav a{
+  color:black;
+  font-weight: bolder;
+  text-decoration: none;
+}
+
+
+.login-form{
+  width:90%;
+  padding:2%;
+  margin:2% auto;
+  display:flex;
+  justify-content: space-around;
+}
+
+form ::placeholder{
+  color: black;
+  padding:5px;
+  background-color: orange;
+}
+
+button{
+  padding:5px 10px;
+  border-radius:4px;
+  background-color: orange;
+  color:black;
+  min-width: fit-content;
+  font-weight: bolder;
+}
+
+.add-friend{
+  width:70%;
+  padding:2%;
+  margin:2% auto;
+  display:flex;
+  justify-content: space-around;
+}
