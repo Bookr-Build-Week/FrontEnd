@@ -30,7 +30,7 @@ const Div = styled.div`
     }
 `
 
-function FilterPage() {
+function CategoryPage() {
     return (
         <FilterWrap style={{display: 'flex', justifyContent: 'center'}}>
             <FilterBox >
@@ -91,5 +91,5 @@ function FilterPage() {
     )
 }
 
-export default FilterPage;
+export default CategoryPage;
 
