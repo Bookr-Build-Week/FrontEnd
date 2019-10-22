@@ -5,7 +5,7 @@ export const axiosWithAuth = () => {
   // return an instance of axios
   return axios.create({
     // need to fix url
-    baseURL: 'http://localhost:5000/',
+    baseURL: 'https://bookr-bw-1.herokuapp.com/',
     headers: {
       Authorization: token
     }
