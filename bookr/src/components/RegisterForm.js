@@ -34,7 +34,7 @@ export default function RegisterForm(props) {
             <div className="d-flex justify-content-center h-100">
                 <div className="card">
                     <div className="card-header">
-                        <h1 className="register-h1">Register </h1>
+                        <h2 className="register-h2">Register </h2>
                     </div>
                     <div className="card-body">
                         <Form onSubmit={submitHandler}>
