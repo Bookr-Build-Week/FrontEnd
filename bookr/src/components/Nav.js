@@ -19,7 +19,7 @@
 import React, { useEffect } from 'react';
 import { NavLink } from 'react-router-dom';
 import HouseOutlinedIcon from '@material-ui/icons/HouseOutlined';
-import CollectionsBookmarkOutlinedIcon from '@material-ui/icons/CollectionsBookmarkOutlined';
+// import CollectionsBookmarkOutlinedIcon from '@material-ui/icons/CollectionsBookmarkOutlined';
 import MenuBookIcon from '@material-ui/icons/MenuBook';
 import {Link} from 'react-router-dom';
 
