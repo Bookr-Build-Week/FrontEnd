@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import axiosWithAuth from '../../axiosWithAuth'
+import axios from 'axios';
 import { Link } from 'react-router-dom';
 import TextBookCard from './TextBookCard';
 import { Button } from 'semantic-ui-react';
@@ -9,7 +9,7 @@ function TextBookList({ handleClick, match, history }) {
     const [textBookList, setTextBookList] = useState([]);
   
     useEffect(() => {
-      axiosWithAuth()
+      axios
       .get('')
       .then(response => {
         //Filter response data by category
@@ -27,9 +27,22 @@ function TextBookList({ handleClick, match, history }) {
       });
     }, [])
 
+    function ClickHandler() {
+        history.push('/')
+      }
+
     return (
-       
-      );
-    }
+        <div style={{display: 'flex', flexDirection: 'column'}}>
+      <Button onClick={ClickHandler} style={{alignSelf: 'flex-start', color: '#0D5813', background: 'transparent', marginLeft: '20px', fontSize: '1.2rem'}}>
+                 back to home page
+      </Button>
+      <div className="grid-view">
+        {textBookList.map((book, index) => {
+          return <Link to={`/${book.id}`} key={index} ><TextBookCard book={book}/></Link>
+        })}
+      </div>
+    </div>
+  );
+}
     
-    export default TextBookList;
+ export default TextBookList;
