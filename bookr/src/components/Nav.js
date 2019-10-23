@@ -28,7 +28,9 @@ const Nav = () => {
   
 
   <div className="nav">
-    <div className="nav-link">   
+    <h1>Bookr</h1>
+    <div className="nav-link"> 
+      
       <NavLink className="link" key={'001'} to={'/home'}>
         <HouseOutlinedIcon className="link-icon" alt="logo" />
         <div>Home</div>
@@ -39,7 +41,7 @@ const Nav = () => {
         <div>BookList</div>
       </NavLink>
 
-        <div>Logout</div>
+        <button className="logout">Logout</button>
     </div>
   </div>
 )};

@@ -30,7 +30,7 @@ import {axiosWithAuth} from "../utils/axiosWithAuth";
             <div className="d-flex justify-content-center h-100">
                 <div className="card">
                     <div className="card-header">
-                        <h1 className="login-h1">Bookr </h1>
+                        <h2 className="login-h2">Login </h2>
                     </div>
                     <div className="card-body">
                         <Form onSubmit={handleSubmit}>
@@ -56,7 +56,7 @@ import {axiosWithAuth} from "../utils/axiosWithAuth";
                             </div>
                                     
                             <div className="login">
-						        <input type="submit" value="Login" className="btn float-right login_btn"/>
+						        <input type="submit" value="Login" className="button"/>
 					        </div>
                         </Form>
                     </div>

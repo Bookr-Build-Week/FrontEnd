@@ -13,12 +13,12 @@ html,body{
   }
   
   .card{
-  height: 450px;
+  height: 400px;
   margin-top: auto;
   margin-bottom: auto;
   width: 400px;
-  background-color: rgba(0,0,0,0.5) !important;
-  /* background-image: url("./assets/card-logo.jpg") ; */
+  background-color:#4632a8;
+  color: wheat;
   background-repeat:no-repeat;
   background-size:cover; 
   margin:20px;
@@ -41,119 +41,25 @@ html,body{
   
   .card-header h3{
   color: white;
+  font-size: 30px;
+  }
+  h1{
+    color: wheat;
+    font-size:45px;
+    text-shadow:2px 2px 6px goldenrod;
+    margin-top: auto;
+  }
+  h2{
+    font-size: 30px;
+    padding: 10px;
   }
   
-  /* .social_icon{
-  position: absolute;
-  right: 20px;
-  top: -45px;
-  }
   
-  .input-group-prepend span{
-  width: 50px;
-  background-color: #FFC312;
-  color: black;
-  border:0 !important;
-  }
-  
-  input:focus{
-  outline: 0 0 0 0  !important;
-  box-shadow: 0 0 0 0 !important;
-  
-  }
-  
-  .remember{
-  color: white;
-  }
-  
-  .remember input
-  {
-  width: 20px;
-  height: 20px;
-  margin-left: 15px;
-  margin-right: 5px;
-  }
-  
-  .login_btn {
-  color: black;
-  background-color: #FFC312;
-  width: 100px;
-  }
-  
-  .login_btn:hover{
-  color: black;
-  background-color: white;
-  }
-  
-  .links{
-  color: white;
-  }
-  
-  .links a{
-  margin-left: 4px;
-  color:#FFC312;
-  }
-
-
-
-  .userDelete_btn {
-    color: black;
-    background-color: red;
-    width: 100px;
-    margin-left:10px;
-    }
-
-  .userEdit_btn {
-      color: black;
-      background-color:orange;
-      width: 100px;
-      margin-right:10px;
-      }
-
-  .userEdit_btn:hover, .userDelete_btn:hover{
-        color: black;
-        background-color: white;
-        }
-
-
-.allCards{
-  display:flex;
-  justify-content: center;
-}
-
-.login-h1, .register-h1{
- color:lightblue;
-text-shadow:1px 1px 3px #000000;
-
-} */
-
-
-/* .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #09d3ac;
-/* } */
  .nav{
-  background-color: orange;
+  background-color: #4632a8;
   padding:2%;
   margin:2% 0;
+ 
   display:flex;
   justify-content: space-around;
 }
@@ -161,15 +67,31 @@ text-shadow:1px 1px 3px #000000;
 .nav-link{
   display:flex;
   justify-content: space-around;
-  width: 300px;
+  width: 600px;
+  height:60px ;
 }
 
 .nav a{
-  color:black;
+  color:wheat;
   font-weight: bolder;
   text-decoration: none;
 }
-
+.nav a :hover{
+  color: red;
+  cursor: pointer;
+}
+button.logout{
+  color: #4632a8;
+  padding:10px;
+  background-color:wheat;
+  height: 45px;
+  width: 150px;
+  border-radius: 4px;
+}
+button.logout :hover{
+  color: red;
+  cursor: pointer;
+}
 
 .login-form{
   widows: 150px;
@@ -181,20 +103,39 @@ text-shadow:1px 1px 3px #000000;
 }
 
 form ::placeholder{
-  color: black;
+  color: #4632a8;
   padding:5px;
-  background-color: orange;
+  background-color:wheat;
   height: 30px;
   width: 150px;
 }
 
-button{
+input.button{
   padding:5px 10px;
   border-radius:4px;
-  background-color: orange;
+  background-color:white;
   color:black;
   min-width: fit-content;
   font-weight: bolder;
 }
 
+*{
+  box-sizing: border-box;
+  
+  }
+
+input{
+  width:200px;
+  height:35px;
+  margin: 10px;
+  
+}
  
+.login{
+  height:40px;
+  margin:10px;
+ 
+}
+a{
+  color:wheat;
+}
