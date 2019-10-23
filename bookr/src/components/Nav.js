@@ -42,6 +42,7 @@ const Nav = () => {
       </NavLink>
 
         <button className="logout">Logout</button>
+        <button className="login">Login</button>
     </div>
   </div>
 )};

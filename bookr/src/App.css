@@ -93,6 +93,19 @@ button.logout :hover{
   cursor: pointer;
 }
 
+button.login{
+  color: #4632a8;
+  padding:10px;
+  background-color:wheat;
+  height: 45px;
+  width: 150px;
+  border-radius: 4px;
+}
+button.login :hover{
+  color: red;
+  cursor: pointer;
+}
+
 .login-form{
   widows: 150px;
   height: 60px;
