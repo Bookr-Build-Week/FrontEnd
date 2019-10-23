@@ -19,7 +19,7 @@
 import React, { useEffect } from 'react';
 import { NavLink } from 'react-router-dom';
 import HouseOutlinedIcon from '@material-ui/icons/HouseOutlined';
-import CollectionsBookmarkOutlinedIcon from '@material-ui/icons/CollectionsBookmarkOutlined';
+// import CollectionsBookmarkOutlinedIcon from '@material-ui/icons/CollectionsBookmarkOutlined';
 import MenuBookIcon from '@material-ui/icons/MenuBook';
 import {Link} from 'react-router-dom';
 
@@ -33,7 +33,7 @@ const Nav = () => {
     <h1>Bookr</h1>
     <div className="nav-link"> 
       
-      <NavLink className="link" key={'001'} to={'/home'}>
+      <NavLink className="link" key={'001'} to={'/category'}>
         <HouseOutlinedIcon className="link-icon" alt="logo" />
         <div>Home</div>
       </NavLink>
@@ -42,6 +42,7 @@ const Nav = () => {
         <MenuBookIcon className="link-icon" alt="logo" />
         <div>BookList</div>
       </NavLink>
+      
       
       <Link to='/login'>
         <button className="login">Login</button>
