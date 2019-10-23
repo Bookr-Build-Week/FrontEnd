@@ -60,17 +60,7 @@ export default function RegisterForm(props) {
                                     required
                                     />
                             </div>
-                            <div className="register">   
-                               
-                                <input
-                                type="email"
-                                name="email"
-                                value={userCredentials.email}
-                                onChange={changeHandler}
-                                placeholder="Email"
-                                required
-                                />
-                            </div>
+                           
                            
                             <div className="register">
 						        <input type="submit" value="Register" className="btn float-right login_btn"/>
