@@ -33,7 +33,7 @@ const Nav = () => {
     <h1>Bookr</h1>
     <div className="nav-link"> 
       
-      <NavLink className="link" key={'001'} to={'/home'}>
+      <NavLink className="link" key={'001'} to={'/category'}>
         <HouseOutlinedIcon className="link-icon" alt="logo" />
         <div>Home</div>
       </NavLink>
@@ -42,6 +42,7 @@ const Nav = () => {
         <MenuBookIcon className="link-icon" alt="logo" />
         <div>BookList</div>
       </NavLink>
+      
       
       <Link to='/login'>
         <button className="login">Login</button>
