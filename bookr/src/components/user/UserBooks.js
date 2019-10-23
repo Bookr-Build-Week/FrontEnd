@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
-function SavedBooks(props) {
+function UserBooks(props) {
     const {book} = props;
 
     const Wrapper = styled.div`
@@ -39,4 +39,4 @@ function SavedBooks(props) {
     );
 }
 
-export default SavedBooks;
+export default UserBooks;
