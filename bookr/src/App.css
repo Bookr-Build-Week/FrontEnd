@@ -106,7 +106,7 @@ button.login :hover{
   cursor: pointer;
 }
 
-.login-form{
+.log-form{
   widows: 150px;
   height: 60px;
   padding:2%;
@@ -118,7 +118,7 @@ button.login :hover{
 form ::placeholder{
   color: #4632a8;
   padding:5px;
-  background-color:wheat;
+  background-color:white;
   height: 30px;
   width: 150px;
 }
@@ -144,7 +144,7 @@ input{
   
 }
  
-.login{
+.log{
   height:40px;
   margin:10px;
  

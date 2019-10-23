@@ -55,7 +55,7 @@ import {axiosWithAuth} from "../utils/axiosWithAuth";
                                     />
                             </div>
                                     
-                            <div className="login">
+                            <div className="log">
 						        <input type="submit" value="Login" className="button"/>
 					        </div>
                         </Form>
