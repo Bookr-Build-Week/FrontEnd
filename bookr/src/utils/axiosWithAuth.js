@@ -11,3 +11,20 @@ export const axiosWithAuth = () => {
     }
   });
 };
+
+// import axios from 'axios';
+// ​
+// export const bookrApi = axios.create({
+//   baseURL: 'https://sheltered-springs-53032.herokuapp.com/',
+// });
+// ​
+// export const bookrApiWithAuth = () => {
+//   const token = localStorage.getItem('token');
+//   return axios.create({
+//     baseURL: 'https://sheltered-springs-53032.herokuapp.com/',
+//     headers: {
+//       'Content-Type': 'application/json',
+//       Authorization: token,
+//     },
+//   });
+// };
