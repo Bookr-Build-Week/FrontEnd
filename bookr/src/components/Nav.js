@@ -21,6 +21,8 @@ import { NavLink } from 'react-router-dom';
 import HouseOutlinedIcon from '@material-ui/icons/HouseOutlined';
 import CollectionsBookmarkOutlinedIcon from '@material-ui/icons/CollectionsBookmarkOutlined';
 import MenuBookIcon from '@material-ui/icons/MenuBook';
+import {Link} from 'react-router-dom';
+
 
 const Nav = () => {
 
@@ -40,9 +42,17 @@ const Nav = () => {
         <MenuBookIcon className="link-icon" alt="logo" />
         <div>BookList</div>
       </NavLink>
-
-        <button className="logout">Logout</button>
+      
+      <Link to='/login'>
         <button className="login">Login</button>
+        </Link>
+     
+        <Link to='/logout'>
+        <button className="logout">Logout</button>
+        </Link>
+       
+        
+       
     </div>
   </div>
 )};
