@@ -15,6 +15,7 @@ import {axiosWithAuth} from "../utils/axiosWithAuth";
             setLogin({username: "", password: ""})
             
             axiosWithAuth().post("/login", login)
+            .get('https://bookr-be.herokuapp.com/api/auth')
             .then(res => {
                 console.log(res)
                 localStorage.setItem("token", res.data.token)

@@ -5,7 +5,7 @@ export const axiosWithAuth = () => {
   // return an instance of axios
   return axios.create({
     // need to fix url
-    baseURL: 'https://sheltered-springs-53032.herokuapp.com/',
+    baseURL: 'https://bookr-be.herokuapp.com/',
     headers: {
       Authorization: token
     }
