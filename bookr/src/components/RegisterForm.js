@@ -6,19 +6,19 @@ export default function RegisterForm(props) {
     const [userCredentials, setCredentials] = useState({
         username: "",
         password: "",
-        email: "",
+        
     });
 
     const submitHandler = event => {
         event.preventDefault();
         console.log(userCredentials);
 
-        axios.post("https://bookr-bw-1.herokuapp.com/api/auth/register")
+        axios.post("https://bookr-bw-1.herokuapp.com/api/auth/register",userCredentials)
             .then(res => {
                 console.log(res);
                 props.history.push("/");
             })
-            .catch(err => console.log(err.response))
+            .catch(err => console.log(err))
     }
 
     const changeHandler = event => {
@@ -63,7 +63,7 @@ export default function RegisterForm(props) {
                            
                            
                             <div className="register">
-						        <input type="submit" value="Register" className="btn float-right login_btn"/>
+						        <button type="submit" value="Register" className="btn float-right login_btn"/>
 					        </div>
                         </Form>
                     </div>
