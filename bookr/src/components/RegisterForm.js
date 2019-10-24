@@ -6,7 +6,7 @@ export default function RegisterForm(props) {
     const [userCredentials, setCredentials] = useState({
         username: "",
         password: "",
-        email: "",
+        
     });
 
     const submitHandler = event => {
@@ -18,7 +18,7 @@ export default function RegisterForm(props) {
                 console.log(res);
                 props.history.push("/");
             })
-            .catch(err => console.log(err.response))
+            .catch(err => console.log(err))
     }
 
     const changeHandler = event => {
