@@ -13,7 +13,7 @@ export default function RegisterForm(props) {
         event.preventDefault();
         console.log(userCredentials);
 
-        axios.post("https://bookr-bw-1.herokuapp.com/register")
+        axios.post("https://bookr-bw-1.herokuapp.com/api/auth/register")
             .then(res => {
                 console.log(res);
                 props.history.push("/");
