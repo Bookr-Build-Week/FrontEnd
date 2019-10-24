@@ -14,7 +14,7 @@ import {axiosWithAuth} from "../utils/axiosWithAuth";
             e.preventDefault();
             setLogin({username: "", password: ""})
             
-            axiosWithAuth().post("/login", login)
+            axiosWithAuth()
             .get('https://bookr-be.herokuapp.com/api/auth')
             .then(res => {
                 console.log(res)
