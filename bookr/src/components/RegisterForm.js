@@ -63,7 +63,7 @@ export default function RegisterForm(props) {
                            
                            
                             <div className="register">
-						        <input type="submit" value="Register" className="btn float-right login_btn"/>
+						        <button type="submit" value="Register" className="btn float-right login_btn"/>
 					        </div>
                         </Form>
                     </div>
