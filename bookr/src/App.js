@@ -8,6 +8,7 @@ import Nav from './components/Nav';
 import Login from './components/Login';
 import RegisterForm from './components/RegisterForm';
 import PrivateRoute from './components/PrivateRoute';
+import {axiosWithAuth} from './utils/axiosWithAuth';
 import './App.css';
 
   function App() {
@@ -28,11 +29,13 @@ import './App.css';
       <Router>
         <div className="App">
           <Nav/>
+          <Switch>
             <Route exact path="/login" component={Login} />
             <Route exact path="/register" component={RegisterForm}/>
             <Route exact path="/category" component={CategoryPage}/>
             <Route exact path="/textbookcard" component={TextBookCard}/>
             <Route exact path="/textbooklist" component={TextBookList}/>
+            </Switch>
         </div>
       </Router>
     );

@@ -1,14 +1,16 @@
 import React from 'react';
-import { Card } from 'semantic-ui-react';
-
+import { Card,} from 'semantic-ui-react';
+import book from './TextBookList';
 import OneStar from '../../images/1_star.png';
 import TwoStar from '../../images/2_stars.png';
 import ThreeStar from '../../images/3_stars.png';
 import FourStar from '../../images/4_stars.png';
 import FiveStar from '../../images/5_stars.png';
+import TextBookList from './TextBookList';
 
 
-function TextBookCard ({ book }) {
+const TextBookCard = props => {
+  console.log("textBookCard",props)
   let arr = [OneStar, TwoStar, ThreeStar, FourStar, FiveStar];
   return (
     <Card style={{width: '200px', height: '350px', fontSize: '12px', textAlign: 'left', boxShadow: '0 1px 3px 0 rgba(191, 175, 134, 0.3), 0 0 0 1px rgba(191, 175, 134, 0.3)'}}>
