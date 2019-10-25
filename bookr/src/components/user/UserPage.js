@@ -28,7 +28,7 @@ function UserPage() {
 
   useEffect(() => {
       axiosWithAuth()
-      .get(``)
+      .get(`https://bookr-bw.herokuapp.com/api/users/${id}/shelf`)
       .then(res => {
         setUserFavorites(res.data);
       })
@@ -41,7 +41,7 @@ function UserPage() {
   const DeleteHandler = (id_from_array) => {
       console.log('inside DeleteHandler')
       axiosWithAuth()
-      .delete(``)
+      .delete(`https://bookr-bw.herokuapp.com/api/books/${id_from_array}/shelf`)
       .then(res => {
           console.log('successfully deleted')
           setTF(!tf)

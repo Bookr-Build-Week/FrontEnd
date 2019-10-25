@@ -10,7 +10,7 @@ function TextBookList({ handleClick, match, history }) {
   
     useEffect(() => {
       axios
-      .get('')
+      .get('https://bookr-bw.herokuapp.com/api/books')
       .then(response => {
         //Filter response data by category
         let arr = [];

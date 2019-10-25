@@ -43,7 +43,7 @@ export default function Home() {
                     />
                     <Route path='/:id' exact render={props => 
                             <div>
-                            <TextBookPage {...props} />
+                            <TextBookPage {...props} /> 
                             </div>
                     }/>
                     <Route path='/' exact render={() => 
