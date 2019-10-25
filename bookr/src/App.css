@@ -1,42 +1,114 @@
 .App {
   text-align: center;
 }
+html,body{
+ 
+  height: 100%;
+  font-family: 'Numans', sans-serif;
+  }
+  
+  .container{
+  height: 100%;
+  align-content: center;
+  }
+  
+  .card{
+  height: 400px;
+  margin-top: auto;
+  margin-bottom: auto;
+  width: 400px;
+  background-color:#4632a8;
+  color: wheat;
+  background-repeat:no-repeat;
+  background-size:cover; 
+  margin:20px;
+  }
 
-.App-logo {
-  height: 40vmin;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  .card p {
+    margin-top:35px;
+  }
+  
+  .social_icon span{
+  font-size: 60px;
+  margin-left: 10px;
+  color: #FFC312;
+  }
+  
+  .social_icon span:hover{
   color: white;
-}
-
-.App-link {
-  color: #09d3ac;
-}
-.nav{
-  background-color: orange;
+  cursor: pointer;
+  }
+  
+  .card-header h3{
+  color: white;
+  font-size: 30px;
+  }
+  h1{
+    color: wheat;
+    font-size:45px;
+    text-shadow:2px 2px 6px goldenrod;
+    margin-top: auto;
+  }
+  h2{
+    font-size: 30px;
+    padding: 10px;
+  }
+  
+  
+ .nav{
+  background-color: #4632a8;
   padding:2%;
   margin:2% 0;
+ 
   display:flex;
   justify-content: space-around;
 }
 
+.nav-link{
+  display:flex;
+  justify-content: space-around;
+  width: 600px;
+  height:60px ;
+}
+
 .nav a{
-  color:black;
+  color:wheat;
   font-weight: bolder;
   text-decoration: none;
 }
+.nav a :hover{
+  color: red;
+  cursor: pointer;
+}
+button.logout{
+  color: #4632a8;
+  padding:10px;
+  background-color:wheat;
+  height: 45px;
+  width: 150px;
+  border-radius: 4px;
+}
+button.logout :hover{
+  color: red;
+  cursor: pointer;
+}
 
+button.login{
+  color: #4632a8;
+  padding:10px;
+  background-color:wheat;
+  height: 45px;
+  width: 150px;
+  border-radius: 4px;
+}
+button.login :hover{
+  color: red;
+  cursor: pointer;
+}
 
-.login-form{
-  width:90%;
+.log-form{
+  widows: 150px;
+  height: 60px;
   padding:2%;
   margin:2% auto;
   display:flex;
@@ -44,24 +116,39 @@
 }
 
 form ::placeholder{
-  color: black;
+  color: #4632a8;
   padding:5px;
-  background-color: orange;
+  background-color:white;
+  height: 30px;
+  width: 150px;
 }
 
-button{
+input.button{
   padding:5px 10px;
   border-radius:4px;
-  background-color: orange;
+  background-color:white;
   color:black;
   min-width: fit-content;
   font-weight: bolder;
 }
 
-.add-friend{
-  width:70%;
-  padding:2%;
-  margin:2% auto;
-  display:flex;
-  justify-content: space-around;
+*{
+  box-sizing: border-box;
+  
+  }
+
+input{
+  width:200px;
+  height:35px;
+  margin: 10px;
+  
+}
+ 
+.log{
+  height:40px;
+  margin:10px;
+ 
+}
+a{
+  color:wheat;
 }
