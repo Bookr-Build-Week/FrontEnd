@@ -3,17 +3,18 @@ import React from 'react';
 import { withFormik, Form, Field } from 'formik';
 import { Link } from 'react-router-dom';
 import { connect, useSelector } from 'react-redux';
-import { login } from '../actions';
+import { register } from '../actions';
 import * as Yup from 'yup';
+// WAS HAVING ISSUES WITH GETTING YUP TO WORK WITH MATERIAL UI SINCE YOU CHANGE FORMIK'S 'FIELD' TO MATERIAL UI'S 'TEXTFIELD'
+	// FOUND A GITHUB REPO THAT HELPS WITH USING FORMIK AND MATERIAL UI TOGETHER: https://github.com/stackworx/formik-material-ui
 import { TextField } from 'formik-material-ui';
 import { makeStyles } from '@material-ui/core/styles';
 import Button from '@material-ui/core/Button';
 import NavLogo from "../navlogo.png";
 import { CircleSpinner } from "react-spinners-kit";
 
-
-const Login = ({touched, errors}) => {
-	const isFetching = useSelector(state => state.isFetching);
+const Register = ({touched, errors}) => {
+  const isFetching = useSelector(state => state.isFetching);
 
 	// STYLING
 	const useStyles = makeStyles(() => ({
@@ -50,7 +51,7 @@ const Login = ({touched, errors}) => {
 		btn: {
 			textTransform: 'lowercase',
 			color: 'white',
-			backgroundColor: '#f3bb01',
+			backgroundColor: '#edb901',
 			'&:hover': {
 				backgroundColor: '#cf4e28',
 				transition: '0.3s'
@@ -84,7 +85,7 @@ const Login = ({touched, errors}) => {
 
   return(
 		<>
-			<div className='login-form'>
+			<div className='register-form'>
 				<Form className={classes.container}>
 				  <img src={NavLogo} alt="logo" className="login-logo" />
 					<label className='name-container' className={classes.subcontainer}>
@@ -107,7 +108,7 @@ const Login = ({touched, errors}) => {
 						}}
 						/>
 					</label>
-						
+
 					<label className='password-container' className={classes.subcontainer}>
 						password
 						<Field
@@ -125,14 +126,14 @@ const Login = ({touched, errors}) => {
 							}
 						}}
 						/>
+		
 					</label>
-
 					<label className='submit-button' className={classes.items}>
-						<Button className={classes.btn} variant='outlined' size='medium' type='submit'>login</Button>
+						<Button className={classes.btn} variant='outlined' size='medium' type='submit'>register</Button>
 					</label>
-
+					
 					<p className={classes.items}>
-						don't have an account?<br></br><Link className={classes.link} to='/register'> click to register</Link>
+						already have an account?<br></br><Link className={classes.link} to='/login'> click to login</Link>
 					</p>
 				</Form>
 			</div>
@@ -140,7 +141,7 @@ const Login = ({touched, errors}) => {
 	)
 }
 
-const FormikLogin = withFormik({
+const FormikRegister = withFormik({
 	mapPropsToValues({username, password}
 	) {
 			return {
@@ -148,16 +149,20 @@ const FormikLogin = withFormik({
 				password: password || ''
 			}
 	},
+
 	validationSchema: Yup.object().shape({
 		username: Yup.string()
 			.required('username is required'),
 		password: Yup.string()
-			.required('Password is required')
+			.min(6, 'password must be at least 6 characters long')
+			.required('password is required')
 	}),
+
 	handleSubmit(values, { props, resetForm }){
-    props.login(values, props.history);
+		console.log('hitting handleSubmit')
+    props.register(values, props.history);
     resetForm();
 	}
-})(Login);
+})(Register);
 
-export default connect(null, { login })(FormikLogin);
+export default connect(null, { register })(FormikRegister);
