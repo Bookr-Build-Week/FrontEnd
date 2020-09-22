@@ -1,154 +1,249 @@
-.App {
-  text-align: center;
-}
-html,body{
- 
-  height: 100%;
-  font-family: 'Numans', sans-serif;
-  }
-  
-  .container{
-  height: 100%;
-  align-content: center;
-  }
-  
-  .card{
-  height: 400px;
-  margin-top: auto;
-  margin-bottom: auto;
-  width: 400px;
-  background-color:#4632a8;
-  color: wheat;
-  background-repeat:no-repeat;
-  background-size:cover; 
-  margin:20px;
-  }
 
-  .card p {
-    margin-top:35px;
-  }
-  
-  .social_icon span{
-  font-size: 60px;
-  margin-left: 10px;
-  color: #FFC312;
-  }
-  
-  .social_icon span:hover{
-  color: white;
-  cursor: pointer;
-  }
-  
-  .card-header h3{
-  color: white;
-  font-size: 30px;
-  }
-  h1{
-    color: wheat;
-    font-size:45px;
-    text-shadow:2px 2px 6px goldenrod;
-    margin-top: auto;
-  }
-  h2{
-    font-size: 30px;
-    padding: 10px;
-  }
-  
-  
- .nav{
-  background-color: #4632a8;
-  padding:2%;
-  margin:2% 0;
- 
-  display:flex;
-  justify-content: space-around;
+body{
+  margin:0 auto;
+  background-color:#013533;
+  color:white;
 }
 
-.nav-link{
+.nav{
+  background-color:#f3bb01;
+  height:35px;
+  padding:5px;
+  margin-bottom:30px;
   display:flex;
-  justify-content: space-around;
-  width: 600px;
-  height:60px ;
+  justify-content:space-between;
+  align-items:center;
 }
 
 .nav a{
-  color:wheat;
-  font-weight: bolder;
-  text-decoration: none;
-}
-.nav a :hover{
-  color: red;
-  cursor: pointer;
-}
-button.logout{
-  color: #4632a8;
-  padding:10px;
-  background-color:wheat;
-  height: 45px;
-  width: 150px;
-  border-radius: 4px;
-}
-button.logout :hover{
-  color: red;
-  cursor: pointer;
+  font-size:17px;
+  margin-right:10px;
+  margin-top:5px;
+  text-decoration:none;
+  color:white;
 }
 
-button.login{
-  color: #4632a8;
-  padding:10px;
-  background-color:wheat;
-  height: 45px;
-  width: 150px;
-  border-radius: 4px;
-}
-button.login :hover{
-  color: red;
-  cursor: pointer;
+.nav a:hover{
+  color: black;
 }
 
-.log-form{
-  widows: 150px;
-  height: 60px;
-  padding:2%;
-  margin:2% auto;
-  display:flex;
-  justify-content: space-around;
-}
-
-form ::placeholder{
-  color: #4632a8;
-  padding:5px;
-  background-color:white;
-  height: 30px;
-  width: 150px;
-}
-
-input.button{
-  padding:5px 10px;
-  border-radius:4px;
-  background-color:white;
-  color:black;
-  min-width: fit-content;
-  font-weight: bolder;
-}
-
-*{
-  box-sizing: border-box;
-  
-  }
-
-input{
-  width:200px;
+.logo{
   height:35px;
-  margin: 10px;
-  
+  padding:5px 0;
 }
- 
-.log{
+
+/* * General styling for entire form */
+.form-container{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+.search-container{
+  max-width:1000px;
+  width:100%;
+  margin:0 auto;
+}
+
+
+
+.search-form{
+  height:30px;
+  width:400px;
+  border-top-left-radius:13px;
+  border-bottom-left-radius:13px;
+  padding:4px;
+  border:none;
+  outline:none;
+}
+
+
+/* * Search Button */
+.search-button{
   height:40px;
-  margin:10px;
- 
+  width:90px;
+  border-top-right-radius:13px;
+  border-bottom-right-radius:13px;
+  background-color:#d14f2b;
+  border:none;
+  color:white;
+  font-size:15px;
+  outline:none;
 }
-a{
-  color:wheat;
+.search-button:hover{
+  background-color:#f25a30;
+  transition:0.3s;
+}
+
+
+/* * Search results styling */
+.book-list-container{
+  margin:40px 0;
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:space-between;
+  align-content:center;
+  font-family: 'Cabin', sans-serif;
+  width:100%;
+}
+.book-list-item{
+  width:18.5%;
+  height:300px;
+  margin:15px .55%;
+  text-align:center;
+}
+.book-list-item img{
+  /* width:138px; */
+  width:74%;
+  height:53%;
+  /* height:160px; */
+}
+
+.book-list-item h3{
+  text-decoration:none;
+  color:white;
+  font-size:1.1rem;
+  font-weight:600;
+  margin:0 1px;
+  text-decoration:none;
+}
+.book-list-item p{
+  font-size:14px;
+  margin:3px;
+  opacity:0.8;
+  margin-bottom:10px;
+}
+
+.book-subtitle{
+  font-style: italic;
+  text-align:center;
+}
+.purchase-button{
+  text-decoration:none;
+  color:white;
+  font-size:14px;
+  padding:3px 20px;
+  background-color:#f3bb01;
+  border-radius:5px;
+  border: 1px solid white;
+}
+.purchase-button:hover{
+  background-color:#cf4e28;
+  color:white;
+	transition: 0.3s
+}
+
+
+/* * Book Review Bottom-Header styling */
+.review-container{
+  overflow:hidden;
+  height:300px;
+  width:100%;
+  text-align:center;
+  background: url(https://images.unsplash.com/photo-1526721940322-10fb6e3ae94a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1351&q=80)
+}
+.review-content{
+  background:rgba(216,136,134,.7);
+  height:100%;
+  display:flex;
+  justify-content:center;
+  flex-direction:column;
+  font-family: 'Roboto';
+}
+.review-content h3{
+  margin:0;
+  font-size:2.7rem;
+  font-style:italic;
+  font-family: 'PT Serif', serif;
+}
+.review-content button{
+  text-transform:uppercase;
+  padding:5px 30px;
+  border-radius:40px;
+  margin:0 auto;
+  margin-top: 10px;
+  font-size:12px;
+  font-weight:300;
+  font-family: "Roboto";
+  color: white;
+  outline: none;
+  background: none;
+  border: 1px solid white;
+}
+
+
+
+.book-content-container{
+  display:flex;
+  justify-content:center;
+  max-width:1000px;
+  margin:0 auto;
+
+  margin-top:30px;
+}
+.book-content-container h3{
+  font-size:2.5rem;
+  margin:0;
+}
+.book-content-container h4{
+  font-size:1.5rem;
+  margin:0;
+  font-style:italic;
+}
+
+.book-content-container p{
+  margin:10px;
+}
+
+.book-buttons{
+  display:flex;
+}
+.book-content-container button{
+  padding:8px 15px;
+  margin:0 20px;
+  background-color:#f3bb01;
+  color:white;
+  border:1px solid white;
+  margin-top:20px;
+  border-radius:5px;
+  font-size:15px;
+  outline:none;
+}
+.book-content-container button:hover{
+  background-color:#cf4e28;
+  color:white;
+	transition: 0.3s
+}
+
+.book-cover{
+  margin-right:30px;
+}
+.book-description{
+  margin-top:20px;
+  padding:10px;
+}
+.review-section{
+  max-width:1000px;
+  margin:0 auto;
+}
+.review-section p{
+  margin-top:0;
+  margin-bottom:20px;
+  margin:0 20px 25px 10px;
+}
+.review-section h2{
+  font-size:2rem;
+  color:white;
+  text-align:center;
+  border-top:1px solid #f3bb01;
+  padding-top:20px;
+}
+.review-content-section{
+  margin:0;
+}
+.login-logo{
+  height:50%;
+  width:50%;
+  display:flex;
+  margin:0 auto;
+  margin-bottom:10px;
 }
