@@ -20,7 +20,7 @@ Review a book [here](https://bookr.now.sh/register).
 
 We are using:
 
-- Create React App
+- React
 - Redux
 - React Hooks
 - Axios
